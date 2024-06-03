@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <label class="logo">WILLIAMS</label>
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#main-pro">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!--  HERO SECTION-->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to My Portfolio</h1>
+      <p class="p-1">Showcasing my Skills and Projects</p>
+      <a href="#main-pro">View Projects</a>
+    </div>
+  </section>
+
+  <!--ABOUT ME SECTION-->
+  <section>
+    <div class="about-content" id="about">
+      <h2>About Me</h2>
+      <p>Hello, I'm GOODLUCK WILLIAMS .W., a skilled web developer with a passion for crafting innovative and user-friendly digital experiences. With a strong foundation in HTML, CSS, JavaScript, and various web development frameworks, I design and build responsive, efficient, and scalable websites and applications that meet the needs of modern users. Whether it's a personal project or a client's vision, I bring creativity, technical expertise, and a dedication to delivering high-quality solutions that exceed expectations. Let's connect and bring your web ideas to life!</p>
+    </div>
+  </section>
+
+  <!--PROJECTS SECTION-->
+  <section id="main-pro">  
+    <div class="project-grid">
+      <div class="card">
+      <div class="card-content">
+        <h1>Rock Paper Scissors Game</h1>
+        <p>Choose your move:</p>
+        <div class="buttons">
+            <button id="rock">&#x1F44A;</button>
+            <button id="paper">&#x1f590;</button>
+            <button id="scissors">&#x270c;</button>
+        </div>
+        <p id="result"></p>
+        <p id="scores">
+            Your score: <span id="user-score">0</span>
+            Computer score: <span id="computer-score">0</span>
+        </p>
+        <p>This project aims to create a pop-up window with a blurred background. The main website features a background image, a title, and a call to action button. Clicking on this button pops up a window. In the background, we can see a blurred version of the main website. The pop-up window has an email input field, a join button, and a close icon at the top right corner. Clicking on the close icon removes the pop-up window, and the main website returns to its normal state without any filters or blurriness. We will learn how to create this blurred background pop-up using HTML, CSS, and JavaScript, including how to apply blur filters, create pop-up windows, and add transition effects.</p>
+        <a href="https://www.100jsprojects.com/project/rock-paper-scissors-game" class="btn">Project</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="doggie.JPG" alt="">
+      <div class="card-content">
+        <h3>Rotating Image Gallery Project - HTML, CSS, JavaScript</h3>
+        <p>
+          Project description - 
+          <br/>
+          This project involves creating a captivating image gallery with rotating images and two navigation buttons. Through JavaScript, we will dynamically change the images using timers and add event listeners for smooth navigation. The CSS transform method will be utilized to rotate the images and enhance the overall aesthetic appeal. This approach will provide a dynamic and visually stunning user experience that is sure to captivate and engage visitors. With a rotation interval of three seconds and intuitive navigation buttons, users can easily explore the gallery and appreciate its visual richness.
+        </p>
+          <a href="https://www.100jsprojects.com/project/rotating-image-gallery" class="btn">Project</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-content">
+          <div class="container">
+            <h1>Tip Calculator</h1>
+            <p>Enter the bill amount and tip percentage to calculate the total.</p>
+            <label for="bill">Bill amount:</label>
+            <input type="number" id="bill">
+            <br/>
+            <label for="tip">Tip percentage:</label>
+            <input type="number" id="tip">
+            <br/>
+            <button id="calculate">Calculate</button>
+            <br/>
+            <label for="total">Total:</label>
+            <span id="total"></span>
+        </div>
+        <p>In this project, our aim is to build a modern tip calculator. The project's primary interface comprises a container labeled "Tip Calculator" with two input fields: one for the bill amount and the other for the tip percentage. The tip calculator has a modern design that is styled using CSS. We utilized JavaScript to obtain the values of the two input fields and calculate the total amount based on these values.</p>
+        <a href="https://www.100jsprojects.com/project/tip-calculator" class="btn">Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILL SECTION -->
+  <section class="skilly">
+    <div class="skill">
+      <h1>My Skill</h1>
+      
+      <li><h3>HTML</h3>
+        <span class="bar"><span class="html"></span></span>
+      </li>
+      <li><h3>CSS</h3>
+        <span class="bar"><span class="css"></span></span>
+      </li>
+      <li><h3>REACT</h3>
+        <span class="bar"><span class="react"></span></span>
+      </li>
+      <li><h3>JAVASCRIPT</h3>
+        <span class="bar"><span class="javascript"></span></span>
+      </li>
+    </div>
+    </section>
+    
+   <!--CONTACT SECTION-->
+   <section class="contact" id="contact">
+    <div class="contactform">
+      <form action="">
+        <h2>Contact Me</h2>
+        <div class="inputbox">
+          <input type="text" name="" required="required">
+          <span>Full Name</span>
+        </div>
+  
+        <div class="inputbox">
+          <input type="text" name="" required="required">
+          <span>Your Email</span>
+        </div>
+  
+        <div class="inputbox">
+          <textarea required="required"></textarea>
+          <span>Your Message</span>
+        </div>
+  
+        <div class="inputbox">
+          <input type="submit" name="" value="Send">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footerContainer">
+      <div class="socialIcon">
+        <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a href="">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-google"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footerNav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Our Team</a></li>
+      </ul>
+    </div>
+
+    <div class="footerBottom">
+      <p>Copyright &copy;2024; Designed by <span class="designer">Williams</span></p>
+    </div>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
